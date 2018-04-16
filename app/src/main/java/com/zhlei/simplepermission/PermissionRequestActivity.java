@@ -10,7 +10,6 @@ import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.v4.app.ActivityCompat;
 import android.support.v4.content.PermissionChecker;
-import android.support.v7.app.AppCompatActivity;
 import android.view.KeyEvent;
 import android.view.View;
 import android.view.Window;
@@ -23,7 +22,7 @@ import java.util.List;
  * 权限请求
  * @author lezh04
  */
-public class PermissionRequestActivity extends AppCompatActivity {
+public class PermissionRequestActivity extends Activity {
 
     private static final String TAG = "PermissionRequestActivity";
 
@@ -44,7 +43,7 @@ public class PermissionRequestActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_permission_request);
         invasionStatusBar(this);
         requestRuntimePermissions();
     }

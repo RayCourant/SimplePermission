@@ -40,7 +40,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             for (String permission: permissions) {
                 deny +=  permission;
             }
-            Toast.makeText(MainActivity.this, "权限请求被拒绝: ", Toast.LENGTH_LONG)
+            Toast.makeText(MainActivity.this, "权限请求被拒绝: " + deny, Toast.LENGTH_LONG)
                     . show();
         }
     };
